@@ -1,24 +1,9 @@
-# smooth-menu
+### Smooth-menu component:
 
-## Project setup
-```
-yarn install
-```
+page: https://dainty-hotteok-a38e9f.netlify.app
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+Tools/technologies: Vue.js scss;
 
-### Compiles and minifies for production
-```
-yarn build
-```
+Description:
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+* Animated menu component
