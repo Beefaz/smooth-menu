@@ -47,6 +47,10 @@ export default {
     spinnerWidth: {
       type: Number,
       default: 100
+    },
+    selected: {
+      type: Number,
+      default: undefined
     }
   },
   components: {
@@ -68,6 +72,9 @@ export default {
       }
     })
   },
+  mounted() {
+    this.handleCLick(this.selected);
+  },
   methods: {
     handleCLick(id) {
       if (this.state.selectedId === id) return;
@@ -77,7 +84,8 @@ export default {
       }
 
       this.state.selectedId = id;
-      this.$refs['animation-container'].animationIn(`img-${id}`);
+      this.$refs['animation-container'].animationIn(`img-${id}`)
+          .then(() => this.$emit('animation-done', this.state.selectedId));
     },
   }
 }
@@ -94,7 +102,9 @@ export default {
   .navbar__navs {
     margin: unset;
     padding: 10px;
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
     list-style: none;
     background-color: #D3D3D3;
     color: #000000;

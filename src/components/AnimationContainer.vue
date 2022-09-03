@@ -55,7 +55,7 @@ export default {
       const element = this.$refs[ref][0];
 
       element.classList.add('move-in');
-      await new Promise((res) => setTimeout(res, 300));
+      return await new Promise((res) => setTimeout(res, 300));
     },
 
     async animationOut(ref) {
@@ -66,7 +66,7 @@ export default {
       await new Promise((res) => setTimeout(res, 300));
       element.classList.remove('move-out');
     },
-  }
+  },
 }
 </script>
 <style lang="scss" scoped>
@@ -113,10 +113,10 @@ export default {
 }
 
 .x-axis-wrapper.move-in {
-  animation: 0.3s move-x ease-out both;
+  animation: 0.3s move-x-in ease-out both;
 
   .y-axis-wrapper {
-    animation: 0.3s move-y ease-in both;
+    animation: 0.3s move-y-in ease-in both;
   }
 }
 
@@ -128,7 +128,7 @@ export default {
   }
 }
 
-@keyframes move-x {
+@keyframes move-x-in {
   from {
     transform: translateX(0);
   }
@@ -146,7 +146,7 @@ export default {
   }
 }
 
-@keyframes move-y {
+@keyframes move-y-in {
   from {
     transform: translateY(0);
   }
