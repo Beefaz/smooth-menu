@@ -84,7 +84,9 @@ export default {
 <style lang="scss">
 body {
   margin: unset;
-  padding: 20px;
+  display: flex;
+  height: 100%;
+  width: 100%;
 }
 
 #app {
@@ -95,6 +97,7 @@ body {
   color: #2c3e50;
   max-width: max-content;
   margin: 0 auto;
+  flex: 1 1 100%;
 }
 
 .examples {
