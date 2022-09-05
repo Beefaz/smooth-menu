@@ -46,8 +46,8 @@ export default {
       fullScreenIsOn: false,
     }
   },
-  mounted() {
-    document.addEventListener("fullscreenchange", ()=>this.toggleButtonImage());
+  beforeMount() {
+    document.addEventListener("fullscreenchange", () => this.toggleButtonImage());
   },
   methods: {
     toggleFullScreen() {
@@ -57,7 +57,7 @@ export default {
     },
     toggleButtonImage() {
       return document.fullscreenElement !== null ? this.fullScreenIsOn = true : this.fullScreenIsOn = false;
-    }
+    },
   },
   computed: {
     getCameraOrbit(){
@@ -78,7 +78,7 @@ export default {
 
   .btn-full-screen {
     all: unset;
-    padding:5px;
+    padding: 5px;
     display: flex;
     position: fixed;
     z-index: 2;
@@ -97,4 +97,5 @@ export default {
     height: 100%;
   }
 }
+
 </style>
