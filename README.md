@@ -6,4 +6,5 @@ Tools/technologies: Vue.js scss;
 
 Description:
 
-* Animated menu component
+* Started as an animated menu component
+* ended as planet wepage... :)

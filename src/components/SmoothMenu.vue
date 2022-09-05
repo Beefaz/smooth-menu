@@ -64,7 +64,7 @@ export default {
       }
     }
   },
-  beforeMount() {
+  created() {
     this.state.links = this.links.map((item, index) => {
       return {
         id: index,

@@ -4,7 +4,7 @@
       :style="{width: `${spinnerWidth}px`}"
   >
     <div class="x-axis-wrapper"
-         v-for="({src, title, id}) in links"
+         v-for="({thumbnailSrc, title, id}) in links"
          :key="`img-${id}`"
          :ref="`img-${id}`"
          :style="{
@@ -22,7 +22,7 @@
         >
           <img
               class="img"
-              :src="src"
+              :src="thumbnailSrc"
               :alt="title"
           >
         </div>
@@ -97,8 +97,6 @@ export default {
       box-shadow: -5px 15px 11px -10px #000000;
     }
   }
-
-
 }
 
 .x-axis-wrapper {

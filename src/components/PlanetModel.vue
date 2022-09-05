@@ -1,5 +1,5 @@
 <template>
-  <div class="iframe-wrapper" ref="imageWrapper"
+  <div class="model-wrapper" ref="imageWrapper"
   >
     <button type="button" class="btn-full-screen" @click="toggleFullScreen">
       <img
@@ -13,10 +13,23 @@
           alt="expand"
       />
     </button>
-    <iframe
-        src='https://solarsystem.nasa.gov/gltf_embed/2372'
-        frameborder='0'
-    />
+    <model-viewer
+        class="model"
+        :src="model"
+        :alt="title"
+        camera-controls=""
+        :camera-orbit="getCameraOrbit"
+        :exposure="title === 'Earth' ? 2 : 1"
+        interaction-prompt-threshold="1000"
+        :min-field-of-view="title === 'Saturn' ? '25deg' : '50deg'"
+        :max-field-of-view="title === 'Saturn' ? '75deg' : '150deg'"
+        disable-pan=""
+        auto-rotate=""
+        :ios-src="iosModel"
+        reveal="auto"
+        preload=""
+        ar-status="not-presenting">
+    </model-viewer>
   </div>
 </template>
 
@@ -24,7 +37,9 @@
 export default {
   name: 'PlanetModel',
   props: {
-    src: String
+    title: String,
+    model: String,
+    iosModel: String,
   },
   data() {
     return {
@@ -44,19 +59,29 @@ export default {
       return document.fullscreenElement !== null ? this.fullScreenIsOn = true : this.fullScreenIsOn = false;
     }
   },
+  computed: {
+    getCameraOrbit(){
+      const orbitParams = {
+        Earth: '215deg 0 0',
+        Saturn: '0 0 50%'
+      }
+      return orbitParams[this.title] !== undefined ? orbitParams[this.title] : '';
+    }
+  }
 }
 </script>
 
-<style lang="scss">
-.iframe-wrapper {
-  position: relative;
-  margin-top:50px;
+<style lang="scss" scoped>
+.model-wrapper {
+  width: 100%;
+  height: 100%;
 
   .btn-full-screen {
     all: unset;
     padding:5px;
     display: flex;
-    position: absolute;
+    position: fixed;
+    z-index: 2;
     top: 0;
     right: 0;
     cursor: pointer;
@@ -67,10 +92,9 @@ export default {
     }
   }
 
-  iframe {
+  .model {
     width: 100%;
     height: 100%;
-    min-height: 50vh;
   }
 }
 </style>

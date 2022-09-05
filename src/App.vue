@@ -73,11 +73,20 @@ export default {
       ]
     }
   },
+  created() {
+    window.addEventListener("resize", this.checkScreenSize);
+  },
+  mounted() {
+    window.dispatchEvent(new Event('resize'));
+  },
+  beforeUnmount() {
+    window.removeEventListener("resize", this.checkScreenSize);
+  },
   methods: {
     doSomething(id) {
       console.log(id);
     },
-  }
+  },
 }
 </script>
 
@@ -104,5 +113,27 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  //overrides
+  .navbar .navbar__navs, .animation-container::before {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .navbar__navs {
+    color: #B1B1B1 !important;
+  }
+  .nav.active, .nav:hover {
+    color: #FFFFFF !important;
+  }
 }
 </style>
