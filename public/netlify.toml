@@ -1,4 +1,4 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self' https://solarsystem.nasa.gov https://unpkg.com/"
+    Content-Security-Policy = "*"
