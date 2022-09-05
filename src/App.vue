@@ -18,7 +18,7 @@
       :links="links"
       :menu-height="currentMenuParams.menuHeight"
       :spinner-width="currentMenuParams.spinnerWidth"
-      :selected="2"
+      :selected="0"
       @animation-done="(id)=>changeModel(id)"
   />
 </template>
