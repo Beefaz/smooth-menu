@@ -59,57 +59,57 @@ export default {
           id: 0,
           title: 'Mercury',
           thumbnailSrc: 'https://solarsystem.nasa.gov/system/stellar_items/list_view_images/2_mercury_480x320_new.jpg',
-          planetModel: 'https://solarsystem.nasa.gov/system/resources/gltf_files/2369_Mercury_1_4878.glb',
-          iosModel: 'https://solarsystem.nasa.gov/system/resources/usdz_files/2369_Mercury_1_4878.usdz'
+          planetModel: 'https://dainty-choux-81d08f.netlify.app/public/Mercury.glb',
+          iosModel: 'https://dainty-choux-81d08f.netlify.app/public/Mercury.usdz'
         },
         {
           id: 1,
           title: 'Venus',
           thumbnailSrc: 'https://solarsystem.nasa.gov/system/stellar_items/list_view_images/3_480x320_venus.png',
-          planetModel: 'https://solarsystem.nasa.gov/system/resources/gltf_files/2343_Venus_1_12103.glb',
-          iosModel: 'https://solarsystem.nasa.gov/system/resources/usdz_files/2343_Venus_1_12103.usdz'
+          planetModel: 'https://dainty-choux-81d08f.netlify.app/public/Venus.glb',
+          iosModel: 'https://dainty-choux-81d08f.netlify.app/public/Venus.usdz'
         },
         {
           id: 2,
           title: 'Earth',
           thumbnailSrc: 'https://solarsystem.nasa.gov/system/stellar_items/list_view_images/4_earth_480x320.jpg',
-          planetModel: 'https://dainty-choux-81d08f.netlify.app/public/2393_Earth_1_12756.glb',
-          iosModel: 'https://solarsystem.nasa.gov/system/resources/usdz_files/2393_Earth_1_12756.usdz'
+          planetModel: 'https://dainty-choux-81d08f.netlify.app/public/Earth.glb',
+          iosModel: 'https://dainty-choux-81d08f.netlify.app/public/Earth.usdz'
         },
         {
           id: 3,
           title: 'Mars',
           thumbnailSrc: 'https://solarsystem.nasa.gov/system/stellar_items/list_view_images/6_mars_480x320.jpg',
-          planetModel: 'https://solarsystem.nasa.gov/system/resources/gltf_files/2372_Mars_1_6792.glb',
-          marsModel: 'https://solarsystem.nasa.gov/system/resources/usdz_files/2372_Mars_1_6792.usdz'
+          planetModel: 'https://dainty-choux-81d08f.netlify.app/public/Mars.glb',
+          marsModel: 'https://dainty-choux-81d08f.netlify.app/public/Mars.usdz'
         },
         {
           id: 4,
           title: 'Jupiter',
           thumbnailSrc: 'https://solarsystem.nasa.gov/system/stellar_items/list_view_images/9_jupiter_480x320_new.jpg',
-          planetModel: 'https://solarsystem.nasa.gov/system/resources/gltf_files/2375_Jupiter_1_142984.glb',
-          iosModel: 'https://solarsystem.nasa.gov/system/resources/usdz_files/2375_Jupiter_1_142984.usdz'
+          planetModel: 'https://dainty-choux-81d08f.netlify.app/public/Jupiter.glb',
+          iosModel: 'https://dainty-choux-81d08f.netlify.app/public/Jupiter.usdz'
         },
         {
           id: 5,
           title: 'Saturn',
           thumbnailSrc: 'https://solarsystem.nasa.gov/system/stellar_items/list_view_images/38_saturn_480x320.jpg',
-          planetModel: 'https://solarsystem.nasa.gov/system/resources/gltf_files/2355_Saturn_1_120536.glb',
-          iosModel: 'https://solarsystem.nasa.gov/system/resources/usdz_files/2355_Saturn_1_120536.usdz'
+          planetModel: 'https://dainty-choux-81d08f.netlify.app/public/Saturn.glb',
+          iosModel: 'https://dainty-choux-81d08f.netlify.app/public/Saturn.usdz'
         },
         {
           id: 6,
           title: 'Uranus',
           thumbnailSrc: 'https://solarsystem.nasa.gov/system/stellar_items/list_view_images/69_uranus_480x320.jpg',
-          planetModel: 'https://solarsystem.nasa.gov/system/resources/gltf_files/2344_Uranus_1_51118.glb',
-          iosModel: 'https://solarsystem.nasa.gov/system/resources/usdz_files/2344_Uranus_1_51118.usdz'
+          planetModel: 'https://dainty-choux-81d08f.netlify.app/public/Uranus.glb',
+          iosModel: 'https://dainty-choux-81d08f.netlify.app/public/Uranus.usdz'
         },
         {
           id: 7,
           title: 'Neptune',
           thumbnailSrc: 'https://solarsystem.nasa.gov/system/stellar_items/list_view_images/90_neptune_480x320.jpg',
-          planetModel: 'https://solarsystem.nasa.gov/system/resources/gltf_files/2364_Neptune_1_49528.glb',
-          iosModel: 'https://solarsystem.nasa.gov/system/resources/usdz_files/2364_Neptune_1_49528.usdz'
+          planetModel: 'https://dainty-choux-81d08f.netlify.app/public/Neptune.glb',
+          iosModel: 'https://dainty-choux-81d08f.netlify.app/public/Neptune.usdz'
         },
       ]
     }
