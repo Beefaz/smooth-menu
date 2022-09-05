@@ -1,4 +1,4 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self'; script-src-elem solarsystem.nasa.gov"
+    Content-Security-Policy = "default-src 'self' solarsystem.nasa.gov"
