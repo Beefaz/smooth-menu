@@ -73,7 +73,7 @@ export default {
           id: 2,
           title: 'Earth',
           thumbnailSrc: 'https://solarsystem.nasa.gov/system/stellar_items/list_view_images/4_earth_480x320.jpg',
-          planetModel: 'https://solarsystem.nasa.gov/system/resources/gltf_files/2393_Earth_1_12756.glb',
+          planetModel: 'https://dainty-choux-81d08f.netlify.app/public/2393_Earth_1_12756.glb',
           iosModel: 'https://solarsystem.nasa.gov/system/resources/usdz_files/2393_Earth_1_12756.usdz'
         },
         {
